@@ -22,7 +22,9 @@ class estudiante{
     
 }
 
+function opc3(){
 
+}
 let acum=0;
 function opc2(){
     let valor = prompt("Introduzca nuevo valor");

@@ -51,6 +51,11 @@
                     <input type="number" class="form-control" id="nota" name="nota">
                 </div>
             </div>
+            <?php $archivo = "alumnos.txt"; 
+            $gestor = @fopen("alumnos.txt", "w");
+
+            fclose($gestor);
+            ?>
             <?php 
                 include 'bd\conexion.php';
                 $sql = 'SELECT id, nombre, materia, nota from estudiantes';
